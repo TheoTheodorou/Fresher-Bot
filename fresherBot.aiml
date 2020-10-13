@@ -1,0 +1,126 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello fresher! How are you?</template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking fresher.</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know fresher. What would you like to discuss about NTU?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Sure mate.</template></category>
+
+
+<!--- Fresher Information -->
+
+<category><pattern> WHAT IS THE ADDRESS * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHO IS * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHERE IS * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> HOW * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHEN * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHERE * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHO * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS THE STUDENT * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<!--- Weather Information -->
+
+<category><pattern> * WEATHER * </pattern>
+  <template>#2$<star index="2"/></template></category>
+
+<category><pattern> WEATHER * </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<category><pattern> * WEATHER </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<category><pattern> WEATHER LIKE * </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<category><pattern> WEATHER LOOKING LIKE * </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS THE WEATHER * </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<category><pattern> * FORECAST * </pattern>
+  <template>#2$<star index="2"/></template></category>
+
+<category><pattern> FORECAST * </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<category><pattern> * FORECAST </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<category><pattern> FORECAST LIKE * </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<category><pattern> FORECAST LOOKING LIKE * </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS THE FORECAST * </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<!-- FOL model interface -->
+  <category><pattern> I WILL PLANT * IN * </pattern>
+    <template>#4$<star index="1"/>$<star index="2"/></template></category>
+
+  <category><pattern> ARE THERE ANY * IN * </pattern>
+    <template>#5$<star index="1"/>$<star index="2"/></template></category>
+
+  <category><pattern> ARE ALL * IN * </pattern>
+    <template>#6$<star index="1"/>$<star index="2"/></template></category>
+
+  <category><pattern> WHICH FRUIT ARE IN * </pattern>
+    <template>#7$<star index="1"/></template></category>
+
+
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+</aiml>
